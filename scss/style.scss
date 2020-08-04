@@ -513,6 +513,12 @@ thead th {
 	justify-content: center;
 }
 
+@media (max-width: 1400px) {
+	.card{
+	width: 40%;
+	min-height: 300px;
+	}
+}
 
 @media (max-width: 1200px) { 
 	.toolbar{
