@@ -16,17 +16,23 @@ $('.card').on('click', function(e){
 });
 
 $('.cards-btn').on('click', function(e){
+	$('.toolbar-btn').removeClass('toolbar-btn-active');
+	$('.cards-btn').toggleClass('toolbar-btn-active');
 	$('.hide-content').removeClass('show-content');
 	$('.content__cards').toggleClass('show-content');
 
 });
 
 $('.tabs-btn').on('click', function(e){
+	$('.toolbar-btn').removeClass('toolbar-btn-active');
+	$('.tabs-btn').toggleClass('toolbar-btn-active');
 	$('.hide-content').removeClass('show-content');
 	$('.content__tabs').toggleClass('show-content');
 });
 
 $('.tables-btn').on('click', function(e){
+	$('.toolbar-btn').removeClass('toolbar-btn-active');
+	$('.tables-btn').toggleClass('toolbar-btn-active');
 	$('.hide-content').removeClass('show-content');
 	$('.content__tables').toggleClass('show-content');
 });
@@ -50,4 +56,9 @@ $('.tabs__back-btn').on('click', function(e){
 		$('.tabs__items').css('transform', 'translateX' + '(' + scroll_forward + '%)');
 		scroll_counter += -1;
 	}
+});
+
+$('.tabs__item').on('click', function(e){
+	$('.tabs__item').css('background-color', '#ae9789');
+	$(e.currentTarget).css('background-color', '#e8e8e8aa');
 });

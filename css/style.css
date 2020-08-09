@@ -208,6 +208,10 @@ h1, h2, h3, h4, h5, h6 {
   background-color: white;
   border: 2px solid black;
 }
+.toolbar .toolbar-btn-active {
+  background-color: white;
+  border: 2px solid black;
+}
 
 .content {
   height: 100%;
@@ -310,6 +314,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .tabs {
+  overflow-x: auto;
   overflow-x: hidden;
   width: 100%;
 }
@@ -318,9 +323,12 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0px 0px 0px 40px;
   transition: 0.5s;
   min-width: 100%;
+  position: sticky;
+  top: 0;
 }
 .tabs__item {
   display: flex;
+  background-color: #ae9789;
   text-decoration: none;
   color: black;
   min-width: 24.9%;
@@ -478,7 +486,6 @@ thead th {
 
 .table {
   table-layout: fixed;
-  margin: 20px 20px;
 }
 
 .footer {
@@ -541,6 +548,14 @@ thead th {
 
   .toolbar button {
     padding: 0px;
+  }
+
+  .tabs__items {
+    top: 19px;
+  }
+
+  .tabs__forward-btn, .tabs__back-btn {
+    top: 25px;
   }
 }
 @media (max-width: 830px) {
