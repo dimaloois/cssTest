@@ -60,5 +60,5 @@ $('.tabs__back-btn').on('click', function(e){
 
 $('.tabs__item').on('click', function(e){
 	$('.tabs__item').css('background-color', '#ae9789');
-	$(e.currentTarget).css('background-color', '#e8e8e8aa');
+	$(e.currentTarget).css('background-color', '#e8e8e8');
 });
